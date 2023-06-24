@@ -1,36 +1,48 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
-
 const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <nav class="flex space-x-2 justify-between p-4">
+      <ul>
+        <li>
+          <img class="w-6 aspect-square" src="/logo.svg" alt="" />
+        </li>
+      </ul>
+      <div>Alken Dester</div>
+      <ul>
+        <li>
+          <a href="https://github.com/AlkenD" target="_blank">
+            <img class="w-6 aspect-square" src="/icons/github.svg" alt="" /></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <slot />
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
+<style is:global lang="postcss">
+    html,
+    body {
+      @apply bg-zinc-950 text-zinc-200 overflow-hidden;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      scroll-behavior: smooth;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
 </style>

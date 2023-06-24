@@ -1,81 +1,298 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+<Layout title="Alken Dester">
+  <main class="lg:flex">
+    <section class="w-full lg:w-1/2">
+      <img
+        class="w-full aspect-[21/9] lg:aspect-auto object-cover"
+        src="/image.jpeg"
+        alt=""
+      />
+    </section>
+    <section class="lg:w-1/2 relative">
+      <div class="space-y-10">
+        <div class="flex flex-col mt-4 justify-center items-center space-y-4">
+          <h1 class="text-3xl md:text-5xl font-bold">
+            <span class="wave">👋</span>
+            <span>Hello!</span>
+            <span class="text-gradient">I'm Yeshwanth</span>
+          </h1>
+          <div>19 - Bangalore, India</div>
+        </div>
+        <div class="space-y-4 lg:ml-20">
+          <div
+            class="overflow-auto space-y-10 divide-y divide-zinc-200/10 [&>*]:pt-10"
+            style="max-height: calc(100vh - 216px);"
+          >
+            <div class="space-y-4">
+              <h2 class="text-xl"># About</h2>
+              <div class="grid grid-cols-1 gap-4">
+                <div class="text-zinc-400">
+                  I'm a seft thought Front-End Web developer who loves Designing
+                  beautiful UI's.
+                </div>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <h2 class="text-xl"># Languages</h2>
+              <div>
+                <div class="flex items-center space-x-2">
+                  <div class="text-xs font-semibold text-zinc-400">
+                    Learning
+                  </div>
+                  <div class="h-2.5 w-2.5 bg-emerald-500 rounded-full"></div>
+                </div>
+              </div>
+              <div class="space-y-6">
+                <div class="space-y-2">
+                  <div>Languages</div>
+                  <div class="flex items-center space-x-2">
+                    <div class="aspect-square bg-white p-2">
+                      <img class="w-10 h-10" src="/images/html5.svg" alt="" />
+                    </div>
+                    <div class="aspect-square bg-white p-2">
+                      <img class="w-10 h-10" src="/images/css3.svg" alt="" />
+                    </div>
+                    <div class="aspect-square bg-white p-2">
+                      <img
+                        class="w-10 h-10"
+                        src="/images/javascript.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="aspect-square bg-white p-2">
+                      <img
+                        class="w-10 h-10"
+                        src="/images/typescript.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="aspect-square bg-white p-2 relative">
+                      <div
+                        class="h-2.5 w-2.5 bg-emerald-500 rounded-full absolute -top-1 -right-1"
+                      >
+                      </div>
+                      <img class="w-10 h-10" src="/images/go.svg" alt="" />
+                    </div>
+                    <div class="aspect-square bg-white p-2 relative">
+                      <div
+                        class="h-2.5 w-2.5 bg-emerald-500 rounded-full absolute -top-1 -right-1"
+                      >
+                      </div>
+                      <img class="w-10 h-10" src="/images/dart.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <div>Frameworks & Libraries</div>
+                  <div class="flex items-center space-x-2">
+                    <div class="aspect-square bg-white p-2">
+                      <img class="w-10 h-10" src="/images/react.svg" alt="" />
+                    </div>
+                    <div class="aspect-square bg-white p-2">
+                      <img class="w-10 h-10" src="/images/next-js.svg" alt="" />
+                    </div>
+                    <div class="aspect-square bg-white p-2">
+                      <img class="w-10 h-10" src="/images/svelte.svg" alt="" />
+                    </div>
+                    <div class="aspect-square bg-white p-2">
+                      <img class="w-10 h-10" src="/images/astro.svg" alt="" />
+                    </div>
+                    <div class="aspect-square bg-white p-2 relative">
+                      <div
+                        class="h-2.5 w-2.5 bg-emerald-500 rounded-full absolute -top-1 -right-1"
+                      >
+                      </div>
+                      <img class="w-10 h-10" src="/images/flutter.svg" alt="" />
+                    </div>
+                    <div class="aspect-square bg-white p-2 relative">
+                      <div
+                        class="h-2.5 w-2.5 bg-emerald-500 rounded-full absolute -top-1 -right-1"
+                      >
+                      </div>
+                      <img class="w-10 h-10" src="/images/nestjs.svg" alt="" />
+                    </div>
+                    <div class="aspect-square bg-white p-2">
+                      <img
+                        class="w-10 h-10"
+                        src="/images/tailwind-css.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="aspect-square bg-white p-2">
+                      <img
+                        class="w-10 h-10"
+                        src="/images/material-ui.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <div>Tools & Technologies</div>
+                  <div class="flex items-center space-x-2">
+                    <div class="aspect-square bg-white p-2">
+                      <img class="w-10 h-10" src="/images/figma.svg" alt="" />
+                    </div>
+                    <div class="aspect-square bg-white p-2">
+                      <img class="w-10 h-10" src="/images/git.svg" alt="" />
+                    </div>
+                    <div class="aspect-square bg-white p-2">
+                      <img class="w-10 h-10" src="/images/github.svg" alt="" />
+                    </div>
+                    <div class="aspect-square bg-white p-2 relative">
+                      <div
+                        class="h-2.5 w-2.5 bg-emerald-500 rounded-full absolute -top-1 -right-1"
+                      >
+                      </div>
+                      <img
+                        class="w-10 h-10"
+                        src="/images/postgresql.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="aspect-square bg-white p-2 relative">
+                      <div
+                        class="h-2.5 w-2.5 bg-emerald-500 rounded-full absolute -top-1 -right-1"
+                      >
+                      </div>
+                      <img class="w-10 h-10" src="/images/docker.svg" alt="" />
+                    </div>
+                    <div class="aspect-square bg-white p-2">
+                      <img
+                        class="w-10 h-10"
+                        src="/images/visual-studio-code.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <h2 class="text-xl"># Education</h2>
+              <div class="grid grid-cols-1 gap-4">
+                <a
+                  class="p-4 underline-animate-wrapper"
+                  target="_blank"
+                  href=""
+                >
+                  <div class="text-2xl underline-animate">DesterLib</div>
+                  <div class="text-zinc-400">
+                    Powerful personal media library
+                  </div>
+                </a>
+                <a
+                  class="p-4 underline-animate-wrapper"
+                  target="_blank"
+                  href=""
+                >
+                  <div class="text-2xl underline-animate">SPlayer</div>
+                  <div class="text-zinc-400">
+                    A simple and elegent Svelte video player
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <h2 class="text-xl"># Projects</h2>
+              <div class="grid grid-cols-1 gap-4">
+                <a
+                  class="p-4 underline-animate-wrapper"
+                  target="_blank"
+                  href=""
+                >
+                  <div class="text-2xl underline-animate">DesterLib</div>
+                  <div class="text-zinc-400">
+                    Powerful personal media library
+                  </div>
+                </a>
+                <a
+                  class="p-4 underline-animate-wrapper"
+                  target="_blank"
+                  href=""
+                >
+                  <div class="text-2xl underline-animate">SPlayer</div>
+                  <div class="text-zinc-400">
+                    A simple and elegent Svelte video player
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="hidden absolute left-0 top-0 bottom-0 h-full lg:flex justify-center items-center"
+      >
+        <ul>
+          <li class="h-20 w-20 flex justify-center items-center">
+            <img class="w-8" src="/icons/person.svg" alt="" />
+          </li>
+          <li class="h-20 w-20 flex justify-center items-center">
+            <img class="w-8" src="/icons/code.svg" alt="" />
+          </li>
+          <li class="h-20 w-20 flex justify-center items-center">
+            <img class="w-8" src="/icons/education.svg" alt="" />
+          </li>
+          <li class="h-20 w-20 flex justify-center items-center">
+            <img class="w-8" src="/icons/handyman.svg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+  <style>
+    .underline-animate {
+      display: inline-block;
+      padding-bottom: 2px;
+      background-image: linear-gradient(#fff 0 0);
+      background-position: 0 100%;
+      background-size: 0% 2px;
+      background-repeat: no-repeat;
+      transition: background-size 0.3s, background-position 0s 0.3s;
+    }
+
+    .underline-animate-wrapper:hover .underline-animate {
+      background-position: 100% 100%;
+      background-size: 100% 2px;
+    }
+    .wave {
+      animation-name: wave-animation;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      transform-origin: 70% 70%;
+      display: inline-block;
+    }
+
+    @keyframes wave-animation {
+      0% {
+        transform: rotate(0deg);
+      }
+      10% {
+        transform: rotate(15deg);
+      }
+      20% {
+        transform: rotate(-10deg);
+      }
+      30% {
+        transform: rotate(15deg);
+      }
+      40% {
+        transform: rotate(-5deg);
+      }
+      50% {
+        transform: rotate(10deg);
+      }
+      60% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  </style>
+</Layout>
