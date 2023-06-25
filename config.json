@@ -1,0 +1,133 @@
+{
+  "title": "Alken Dester Portfolio",
+  "description": "This is my portfolio site.",
+  "author": "Alken Dester",
+  "nav": [
+    {
+      "label": "About",
+      "icon": "/nav-icons/person.svg",
+      "href": "#about"
+    },
+    {
+      "label": "Code",
+      "icon": "/nav-icons/code.svg",
+      "href": "#code"
+    },
+    {
+      "label": "Education",
+      "icon": "/nav-icons/education.svg",
+      "href": "#education"
+    },
+    {
+      "label": "Projects",
+      "icon": "/nav-icons/handyman.svg",
+      "href": "#projects"
+    }
+  ],
+  "languages": [
+    {
+      "name": "HTML5",
+      "icon": "/icons/languages/html5.svg"
+    },
+    {
+      "name": "CSS3",
+      "icon": "/icons/languages/css3.svg"
+    },
+    {
+      "name": "Javascript / Ecmascript",
+      "icon": "/icons/languages/javascript.svg"
+    },
+    {
+      "name": "Typescript",
+      "icon": "/icons/languages/typescript.svg"
+    },
+    {
+      "name": "GoLang",
+      "icon": "/icons/languages/go.svg",
+      "active": true
+    },
+    {
+      "name": "Dart",
+      "icon": "/icons/languages/dart.svg",
+      "active": true
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Astro",
+      "icon": "/icons/frameworks/astro.svg"
+    },
+    {
+      "name": "Flutter",
+      "icon": "/icons/frameworks/flutter.svg",
+      "active": true
+    },
+    {
+      "name": "Next JS",
+      "icon": "/icons/frameworks/next-js.svg"
+    },
+    {
+      "name": "Nest JS",
+      "icon": "/icons/frameworks/nestjs.svg",
+      "active": true
+    },
+    {
+      "name": "React JS",
+      "icon": "/icons/frameworks/react.svg"
+    },
+    {
+      "name": "Material UI",
+      "icon": "/icons/frameworks/material-ui.svg"
+    },
+    {
+      "name": "Svelte & SvelteKit",
+      "icon": "/icons/frameworks/svelte.svg"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "/icons/frameworks/tailwind-css.svg"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Docker",
+      "icon": "/icons/tools/docker.svg"
+    },
+    {
+      "name": "Figma",
+      "icon": "/icons/tools/figma.svg"
+    },
+    {
+      "name": "GIT",
+      "icon": "/icons/tools/git.svg"
+    },
+    {
+      "name": "GitHub",
+      "icon": "/icons/tools/github.svg",
+      "active": true
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "/icons/tools/postgresql.svg"
+    },
+    {
+      "name": "Visual Studio Code",
+      "icon": "/icons/tools/visual-studio-code.svg",
+      "active": true
+    }
+  ],
+  "timeline": [
+    {
+      "title": "St. Francis Degree College",
+      "subTitle": "2020 - 2023"
+    },
+    {
+      "title": "St. Francis PU College",
+      "subTitle": "2019 - 2020"
+    },
+    {
+      "title": "Modern English School",
+      "subTitle": "2008 - 2019"
+    }
+  ]
+}

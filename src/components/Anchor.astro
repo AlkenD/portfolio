@@ -1,0 +1,29 @@
+---
+export interface Props {
+  title: string;
+  href: string;
+}
+const { title, href } = Astro.props;
+---
+
+<a class="p-4 underline-animate-wrapper" target="_blank" href={href}>
+  <div class="text-2xl underline-animate">{title}</div>
+  <div class="text-zinc-400"><slot /></div>
+</a>
+
+<style>
+  .underline-animate {
+    display: inline-block;
+    padding-bottom: 2px;
+    background-image: linear-gradient(#fff 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s, background-position 0s 0.3s;
+  }
+
+  .underline-animate-wrapper:hover .underline-animate {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+  }
+</style>

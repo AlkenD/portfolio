@@ -1,0 +1,37 @@
+---
+import config from "../../../config.json";
+import Icon from "./Icon.astro";
+---
+
+<div class="space-y-6">
+  <div class="space-y-2">
+    <div>Languages</div>
+    <div class="flex items-center flex-wrap">
+      {
+        config.languages.map((item) => (
+          <Icon icon={item.icon} active={item.active || false} />
+        ))
+      }
+    </div>
+  </div>
+  <div class="space-y-2">
+    <div>Frameworks</div>
+    <div class="flex items-center flex-wrap">
+      {
+        config.frameworks.map((item) => (
+          <Icon icon={item.icon} active={item.active || false} />
+        ))
+      }
+    </div>
+  </div>
+  <div class="space-y-2">
+    <div>Tools</div>
+    <div class="flex items-center flex-wrap">
+      {
+        config.tools.map((item) => (
+          <Icon icon={item.icon} active={item.active || false} />
+        ))
+      }
+    </div>
+  </div>
+</div>

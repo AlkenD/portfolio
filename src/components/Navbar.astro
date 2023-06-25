@@ -1,0 +1,27 @@
+---
+export interface Props {
+    title: string;
+    image: string;
+}
+const { title, image } = Astro.props;
+---
+
+<nav class="flex justify-between p-4">
+    <section>
+        <ul>
+            <li>
+                <img class="w-6 aspect-square" src="/logo.svg" alt="" />
+            </li>
+        </ul>
+    </section>
+    <section>{title}</section>
+    <section>
+        <ul>
+            <li>
+                <a href="https://github.com/AlkenD" target="_blank">
+                    <img class="w-6 aspect-square" src={image} alt="" /></a
+                >
+            </li>
+        </ul>
+    </section>
+</nav>

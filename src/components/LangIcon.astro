@@ -1,0 +1,16 @@
+---
+export interface Props {
+    image: string;
+    active: boolean;
+}
+const { image, active } = Astro.props;
+---
+
+<div class="aspect-square bg-white p-2 relative">
+    {
+        active ? (
+            <div class="h-2.5 w-2.5 bg-yellow-500 rounded-full absolute -top-1 -right-1" />
+        ) : null
+    }
+    <img class="w-10 h-10" src={image} alt="" />
+</div>
