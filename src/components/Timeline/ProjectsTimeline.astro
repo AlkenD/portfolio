@@ -1,0 +1,17 @@
+---
+import TimeCard from "./TimeCard.astro";
+import config from "../../../config.json";
+---
+
+<div class="wrapper">
+  {
+    config.projects.map((item, index) => (
+      <TimeCard
+        title={item.title}
+        subTitle={item.subTitle}
+        firstChild={index === 0}
+        href={item.href}
+      />
+    ))
+  }
+</div>

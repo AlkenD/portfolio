@@ -129,5 +129,43 @@
       "title": "Modern English School",
       "subTitle": "2008 - 2019"
     }
+  ],
+  "projects": [
+    {
+      "title": "Voting System - 2023",
+      "subTitle": "Completed",
+      "href": "https://github.com/AlkenD/app"
+    },
+    {
+      "title": "IPl Auction Live Status - 2023",
+      "subTitle": "Completed",
+      "href": "https://ipl-mu.vercel.app"
+    },
+    {
+      "title": "AwePlayer - 2023",
+      "subTitle": "Updates Pending",
+      "href": "https://github.com/aweplayer/player"
+    },
+    {
+      "title": "AwePlayer - 2023",
+      "subTitle": "Updates Pending",
+      "href": "https://github.com/aweplayer/player"
+    },
+    {
+      "title": "StarStruck - 2023 - Under Development",
+      "subTitle": "Updates Pending",
+      "href": "https://github.com/aweplayer/starstruck"
+    },
+    {
+      "title": "DesterLib - 2022",
+      "subTitle": "Development Paused",
+      "site": "https://dest.eu.org",
+      "href": "https://dest.eu.org"
+    },
+    {
+      "title": "DesterCMS - 2022",
+      "subTitle": "Updates Pending",
+      "href": "https://github.com/DesterCMS"
+    }
   ]
 }
